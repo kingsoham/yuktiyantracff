@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yukti Yantra - Client Feedback Form</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,FILL@0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-teal: #004151;
+            --accent-blue: #0012E2;
+            --pure-white: #FFFFFF;
+        }
+        @layer base {
+            body {
+                font-family: 'Futura PT', 'Inter', sans-serif;
+                background-color: var(--pure-white);
+            }
+        }
+        .rating-input:checked + label {
+            background-color: var(--accent-blue);
+            color: white;
+            border-color: var(--accent-blue);
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0012E2",
+                        "brand-teal": "#004151",
+                        "brand-blue": "#0012E2",
+                    },
+                    fontFamily: {
+                        display: ["Futura PT", "sans-serif"],
+                        body: ["Futura PT", "Inter", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-white text-slate-800 min-h-screen pb-12">
+<header class="pt-12 pb-8 px-4 text-center">
+<div class="flex flex-col items-center mb-6">
+<img alt="Yukti Yantra Logo" class="h-64 w-auto object-contain" src="https://res.cloudinary.com/dcux4jfyp/image/upload/v1768973548/yy_logo_za44aj.png"/>
+</div>
+<div class="max-w-2xl mx-auto">
+<h1 class="text-3xl font-bold text-[var(--primary-teal)] mb-4">Client Feedback Form</h1>
+<p class="text-slate-600 leading-relaxed font-medium">
+                Thank you for partnering with Yukti Yantra. Your insights are invaluable in helping us refine our technology solutions. This form will take approximately 3-5 minutes to complete.
+            </p>
+</div>
+</header>
+<main class="max-w-3xl mx-auto px-4">
+<div class="bg-white rounded-xl shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-slate-100 p-8 md:p-10">
+<form action="#" class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-1">
+<label class="block text-sm font-semibold text-[var(--primary-teal)]">1. Full Name (required)</label>
+<input class="w-full rounded-md border-slate-300 bg-slate-50 focus:ring-[var(--accent-blue)] focus:border-[var(--accent-blue)]" placeholder="Enter your full name" required="" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="block text-sm font-semibold text-[var(--primary-teal)]">2. Job Title / Role (required)</label>
+<input class="w-full rounded-md border-slate-300 bg-slate-50 focus:ring-[var(--accent-blue)] focus:border-[var(--accent-blue)]" placeholder="e.g. CTO, Product Manager" required="" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="block text-sm font-semibold text-[var(--primary-teal)]">3. Company / Organization Name</label>
+<input class="w-full rounded-md border-slate-300 bg-slate-50 focus:ring-[var(--accent-blue)] focus:border-[var(--accent-blue)]" placeholder="Enter company name" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="block text-sm font-semibold text-[var(--primary-teal)]">4. Email Address (required)</label>
+<input class="w-full rounded-md border-slate-300 bg-slate-50 focus:ring-[var(--accent-blue)] focus:border-[var(--accent-blue)]" placeholder="name@company.com" required="" type="email"/>
+</div>
+</div>
+<hr class="border-slate-100"/>
+<div class="space-y-4">
+<label class="block text-sm font-bold text-[var(--primary-teal)] uppercase tracking-wider">5. What service did Yukti Yantra provide to you?</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<label class="flex items-center p-3 border border-slate-200 rounded-lg cursor-pointer hover:bg-slate-50 transition-colors">
+<input class="text-[var(--accent-blue)] focus:ring-[var(--accent-blue)] h-4 w-4" name="service" type="radio" value="AI / ML Consulting"/>
+<span class="ml-3 text-sm font-medium">AI / ML Consulting</span>
+</label>
+<label class="flex items-center p-3 border border-slate-200 rounded-lg cursor-pointer hover:bg-slate-50 transition-colors">
+<input class="text-[var(--accent-blue)] focus:ring-[var(--accent-blue)] h-4 w-4" name="service" type="radio" value="AI Agent Development"/>
+<span class="ml-3 text-sm font-medium">AI Agent Development</span>
+</label>
+<label class="flex items-center p-3 border border-slate-200 rounded-lg cursor-pointer hover:bg-slate-50 transition-colors">
+<input class="text-[var(--accent-blue)] focus:ring-[var(--accent-blue)] h-4 w-4" name="service" type="radio" value="Web Application Development"/>
+<span class="ml-3 text-sm font-medium">Web Application Development</span>
+</label>
+<label class="flex items-center p-3 border border-slate-200 rounded-lg cursor-pointer hover:bg-slate-50 transition-colors">
+<input class="text-[var(--accent-blue)] focus:ring-[var(--accent-blue)] h-4 w-4" name="service" type="radio" value="Automation / Workflow Optimization"/>
+<span class="ml-3 text-sm font-medium">Automation / Workflow Optimization</span>
+</label>
+<label class="flex items-center p-3 border border-slate-200 rounded-lg cursor-pointer hover:bg-slate-50 transition-colors">
+<input class="text-[var(--accent-blue)] focus:ring-[var(--accent-blue)] h-4 w-4" name="service" type="radio" value="Product Strategy &amp; Analysis"/>
+<span class="ml-3 text-sm font-medium">Product Strategy &amp; Analysis</span>
+</label>
+<label class="flex items-center p-3 border border-slate-200 rounded-lg cursor-pointer hover:bg-slate-50 transition-colors">
+<input class="text-[var(--accent-blue)] focus:ring-[var(--accent-blue)] h-4 w-4" name="service" type="radio" value="Other"/>
+<span class="ml-3 text-sm font-medium">Other</span>
+</label>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-[var(--primary-teal)]">6. Briefly describe the problem or challenge Yukti Yantra helped you solve</label>
+<textarea class="w-full rounded-md border-slate-300 bg-slate-50 focus:ring-[var(--accent-blue)] focus:border-[var(--accent-blue)]" placeholder="Describe the project scope..." required="" rows="4"></textarea>
+</div>
+<hr class="border-slate-100"/>
+<div class="space-y-8">
+<label class="block text-sm font-bold text-[var(--primary-teal)] uppercase tracking-wider">Experience Ratings</label>
+<div class="space-y-3">
+<p class="text-sm font-semibold text-[var(--primary-teal)]">7. Overall experience rating</p>
+<div class="flex justify-between items-center max-w-md">
+<span class="text-xs text-slate-500">Very Poor</span>
+<div class="flex gap-2">
+<div class="relative"><input class="sr-only rating-input" id="r7-1" name="q7" type="radio" value="1"/><label class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 cursor-pointer hover:border-[var(--accent-blue)] transition-all text-sm font-bold" for="r7-1">1</label></div>
+<div class="relative"><input class="sr-only rating-input" id="r7-2" name="q7" type="radio" value="2"/><label class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 cursor-pointer hover:border-[var(--accent-blue)] transition-all text-sm font-bold" for="r7-2">2</label></div>
+<div class="relative"><input class="sr-only rating-input" id="r7-3" name="q7" type="radio" value="3"/><label class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 cursor-pointer hover:border-[var(--accent-blue)] transition-all text-sm font-bold" for="r7-3">3</label></div>
+<div class="relative"><input class="sr-only rating-input" id="r7-4" name="q7" type="radio" value="4"/><label class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 cursor-pointer hover:border-[var(--accent-blue)] transition-all text-sm font-bold" for="r7-4">4</label></div>
+<div class="relative"><input class="sr-only rating-input" id="r7-5" name="q7" type="radio" value="5"/><label class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 cursor-pointer hover:border-[var(--accent-blue)] transition-all text-sm font-bold" for="r7-5">5</label></div>
+</div>
+<span class="text-xs text-slate-500">Excellent</span>
+</div>
+</div>
+<div class="space-y-3">
+<p class="text-sm font-semibold text-[var(--primary-teal)]">8. Understanding of business needs rating</p>
+<div class="flex justify-between items-center max-w-md">
+<span class="text-xs text-slate-500">Not at all</span>
+<div class="flex gap-2">
+<div class="relative"><input class="sr-only rating-input" id="r8-1" name="q8" type="radio" value="1"/><label class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 cursor-pointer hover:border-[var(--accent-blue)] transition-all text-sm font-bold" for="r8-1">1</label></div>
+<div class="relative"><input class="sr-only rating-input" id="r8-2" name="q8" type="radio" value="2"/><label class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 cursor-pointer hover:border-[var(--accent-blue)] transition-all text-sm font-bold" for="r8-2">2</label></div>
+<div class="relative"><input class="sr-only rating-input" id="r8-3" name="q8" type="radio" value="3"/><label class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 cursor-pointer hover:border-[var(--accent-blue)] transition-all text-sm font-bold" for="r8-3">3</label></div>
+<div class="relative"><input class="sr-only rating-input" id="r8-4" name="q8" type="radio" value="4"/><label class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 cursor-pointer hover:border-[var(--accent-blue)] transition-all text-sm font-bold" for="r8-4">4</label></div>
+<div class="relative"><input class="sr-only rating-input" id="r8-5" name="q8" type="radio" value="5"/><label class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 cursor-pointer hover:border-[var(--accent-blue)] transition-all text-sm font-bold" for="r8-5">5</label></div>
+</div>
+<span class="text-xs text-slate-500">Extremely well</span>
+</div>
+</div>
+<div class="space-y-3">
+<p class="text-sm font-semibold text-[var(--primary-teal)]">9. Quality of execution and delivery</p>
+<div class="flex justify-between items-center max-w-md">
+<span class="text-xs text-slate-500">Very Unsatisfied</span>
+<div class="flex gap-2">
+<div class="relative"><input class="sr-only rating-input" id="r9-1" name="q9" type="radio" value="1"/><label class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 cursor-pointer hover:border-[var(--accent-blue)] transition-all text-sm font-bold" for="r9-1">1</label></div>
+<div class="relative"><input class="sr-only rating-input" id="r9-2" name="q9" type="radio" value="2"/><label class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 cursor-pointer hover:border-[var(--accent-blue)] transition-all text-sm font-bold" for="r9-2">2</label></div>
+<div class="relative"><input class="sr-only rating-input" id="r9-3" name="q9" type="radio" value="3"/><label class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 cursor-pointer hover:border-[var(--accent-blue)] transition-all text-sm font-bold" for="r9-3">3</label></div>
+<div class="relative"><input class="sr-only rating-input" id="r9-4" name="q9" type="radio" value="4"/><label class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 cursor-pointer hover:border-[var(--accent-blue)] transition-all text-sm font-bold" for="r9-4">4</label></div>
+<div class="relative"><input class="sr-only rating-input" id="r9-5" name="q9" type="radio" value="5"/><label class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 cursor-pointer hover:border-[var(--accent-blue)] transition-all text-sm font-bold" for="r9-5">5</label></div>
+</div>
+<span class="text-xs text-slate-500">Very Satisfied</span>
+</div>
+</div>
+</div>
+<hr class="border-slate-100"/>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-[var(--primary-teal)]">10. What key value or outcome did Yukti Yantra help you achieve?</label>
+<input class="w-full rounded-md border-slate-300 bg-slate-50 focus:ring-[var(--accent-blue)] focus:border-[var(--accent-blue)]" placeholder="e.g. Optimized operational efficiency by 30%" type="text"/>
+</div>
+<div class="space-y-4">
+<label class="block text-sm font-semibold text-[var(--primary-teal)]">11. Measurable improvements (Check all that apply)</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<label class="flex items-center space-x-3 p-2 border border-transparent hover:bg-slate-50 rounded transition-colors cursor-pointer">
+<input class="rounded text-[var(--accent-blue)] focus:ring-[var(--accent-blue)] h-5 w-5" name="improvement" type="checkbox" value="Improved efficiency"/>
+<span class="text-sm font-medium">Improved efficiency or productivity</span>
+</label>
+<label class="flex items-center space-x-3 p-2 border border-transparent hover:bg-slate-50 rounded transition-colors cursor-pointer">
+<input class="rounded text-[var(--accent-blue)] focus:ring-[var(--accent-blue)] h-5 w-5" name="improvement" type="checkbox" value="Cost reduction"/>
+<span class="text-sm font-medium">Cost reduction</span>
+</label>
+<label class="flex items-center space-x-3 p-2 border border-transparent hover:bg-slate-50 rounded transition-colors cursor-pointer">
+<input class="rounded text-[var(--accent-blue)] focus:ring-[var(--accent-blue)] h-5 w-5" name="improvement" type="checkbox" value="Faster turnaround"/>
+<span class="text-sm font-medium">Faster turnaround time</span>
+</label>
+<label class="flex items-center space-x-3 p-2 border border-transparent hover:bg-slate-50 rounded transition-colors cursor-pointer">
+<input class="rounded text-[var(--accent-blue)] focus:ring-[var(--accent-blue)] h-5 w-5" name="improvement" type="checkbox" value="Better decision-making"/>
+<span class="text-sm font-medium">Better decision-making through data or automation</span>
+</label>
+<label class="flex items-center space-x-3 p-2 border border-transparent hover:bg-slate-50 rounded transition-colors cursor-pointer">
+<input class="rounded text-[var(--accent-blue)] focus:ring-[var(--accent-blue)] h-5 w-5" name="improvement" type="checkbox" value="Improved user experience"/>
+<span class="text-sm font-medium">Improved user or customer experience</span>
+</label>
+<label class="flex items-center space-x-3 p-2 border border-transparent hover:bg-slate-50 rounded transition-colors cursor-pointer">
+<input class="rounded text-[var(--accent-blue)] focus:ring-[var(--accent-blue)] h-5 w-5" name="improvement" type="checkbox" value="Not directly measurable"/>
+<span class="text-sm font-medium">Not directly measurable</span>
+</label>
+<label class="flex items-center space-x-3 p-2 border border-transparent hover:bg-slate-50 rounded transition-colors cursor-pointer">
+<input class="rounded text-[var(--accent-blue)] focus:ring-[var(--accent-blue)] h-5 w-5" name="improvement" type="checkbox" value="Other"/>
+<span class="text-sm font-medium">Other</span>
+</label>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-[var(--primary-teal)]">12. Impact metrics/examples (optional)</label>
+<textarea class="w-full rounded-md border-slate-300 bg-slate-50 focus:ring-[var(--accent-blue)] focus:border-[var(--accent-blue)]" placeholder="Provide any quantitative data or specific examples..." rows="2"></textarea>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-[var(--primary-teal)]">13. Short testimonial</label>
+<textarea class="w-full rounded-md border-slate-300 bg-slate-50 focus:ring-[var(--accent-blue)] focus:border-[var(--accent-blue)] italic" placeholder="How would you describe the experience to others?" required="" rows="4"></textarea>
+</div>
+<hr class="border-slate-100"/>
+<div class="space-y-4">
+<label class="block text-sm font-semibold text-[var(--primary-teal)]">14. Would you recommend Yukti Yantra?</label>
+<div class="flex flex-wrap gap-4">
+<label class="flex items-center"><input class="text-[var(--accent-blue)] focus:ring-[var(--accent-blue)]" name="q14" type="radio" value="Yes definitely"/><span class="ml-2 text-sm font-medium">Yes definitely</span></label>
+<label class="flex items-center"><input class="text-[var(--accent-blue)] focus:ring-[var(--accent-blue)]" name="q14" type="radio" value="Yes likely"/><span class="ml-2 text-sm font-medium">Yes likely</span></label>
+<label class="flex items-center"><input class="text-[var(--accent-blue)] focus:ring-[var(--accent-blue)]" name="q14" type="radio" value="Not sure"/><span class="ml-2 text-sm font-medium">Not sure</span></label>
+<label class="flex items-center"><input class="text-[var(--accent-blue)] focus:ring-[var(--accent-blue)]" name="q14" type="radio" value="No"/><span class="ml-2 text-sm font-medium">No</span></label>
+</div>
+</div>
+<div class="space-y-4">
+<label class="block text-sm font-semibold text-[var(--primary-teal)]">15. Permission to use testimonial</label>
+<div class="flex gap-6">
+<label class="flex items-center"><input class="text-[var(--accent-blue)] focus:ring-[var(--accent-blue)]" name="q15" type="radio" value="Yes"/><span class="ml-2 text-sm font-medium">Yes</span></label>
+<label class="flex items-center"><input class="text-[var(--accent-blue)] focus:ring-[var(--accent-blue)]" name="q15" type="radio" value="No"/><span class="ml-2 text-sm font-medium">No</span></label>
+</div>
+</div>
+<div class="space-y-4 bg-slate-50 p-5 rounded-lg border border-slate-100">
+<label class="block text-sm font-semibold text-[var(--primary-teal)]">16. Publicly display as?</label>
+<div class="flex flex-col gap-3">
+<label class="flex items-center"><input class="text-[var(--accent-blue)] focus:ring-[var(--accent-blue)]" name="q16" type="radio" value="Full name/title/company"/><span class="ml-2 text-sm font-medium">Full name/job/company</span></label>
+<label class="flex items-center"><input class="text-[var(--accent-blue)] focus:ring-[var(--accent-blue)]" name="q16" type="radio" value="First name/company"/><span class="ml-2 text-sm font-medium">First name/company</span></label>
+<label class="flex items-center"><input class="text-[var(--accent-blue)] focus:ring-[var(--accent-blue)]" name="q16" type="radio" value="Anonymous"/><span class="ml-2 text-sm font-medium">Anonymous</span></label>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-semibold text-[var(--primary-teal)]">17. Additional comments (optional)</label>
+<textarea class="w-full rounded-md border-slate-300 bg-slate-50 focus:ring-[var(--accent-blue)] focus:border-[var(--accent-blue)]" placeholder="Any other thoughts for the team?" rows="2"></textarea>
+</div>
+<div class="pt-6 border-t border-slate-100">
+<label class="flex items-start cursor-pointer">
+<input class="mt-1 rounded text-[var(--accent-blue)] focus:ring-[var(--accent-blue)] h-5 w-5" required="" type="checkbox"/>
+<span class="ml-3 text-sm text-slate-600 font-medium">18. I confirm that the information provided above is accurate and shared voluntarily.</span>
+</label>
+</div>
+<div class="pt-4">
+<button class="w-full bg-[var(--accent-blue)] hover:opacity-90 text-white font-display font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 group" type="submit">
+                        SUBMIT FEEDBACK
+                        <span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">send</span>
+</button>
+</div>
+</form>
+</div>
+</main>
+<footer class="mt-16 text-center space-y-4">
+<p class="text-[var(--primary-teal)] font-bold opacity-70">Thank you for your valuable time.</p>
+<div class="flex items-center justify-center gap-2 text-slate-400 text-sm font-medium">
+<span>Yukti Yantra © 2026</span>
+<span>•</span>
+<a class="hover:underline" href="#">Privacy Policy</a>
+<span>•</span>
+<a class="hover:underline" href="#">Terms of Service</a>
+</div>
+</footer>
+
+</body></html>
